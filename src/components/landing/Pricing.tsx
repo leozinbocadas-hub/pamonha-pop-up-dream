@@ -92,7 +92,7 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
             <Crown className="w-5 h-5 text-secondary" /> Plano Pro Lucrativo
           </h4>
           <p className="text-primary-foreground/80 text-sm mb-4">
-            Tudo que você precisa para lucrar de verdade
+            Tudo que você precisa para lucrar de verdade e faturar de <span className="font-bold">R$ 200 a R$ 500 reais por dia</span>
           </p>
           <ul className="space-y-2 mb-6 text-sm text-primary-foreground">
             <li className="flex items-center gap-2">

@@ -42,7 +42,7 @@ const Hero = () => {
         href="#planos"
         className="bg-[#008a00] hover:bg-[#00a300] text-white font-black text-lg py-5 px-8 rounded-xl shadow-[0_8px_0_0_#005a00] active:shadow-none active:translate-y-2 transition-all flex items-center gap-3 w-full max-w-[340px] justify-center mb-4 uppercase tracking-tight"
       >
-        Quero aprender agora <ChevronDown className="w-6 h-6" />
+        Quero faturar agora <ChevronDown className="w-6 h-6" />
       </a>
 
       {/* Trust Badge */}
