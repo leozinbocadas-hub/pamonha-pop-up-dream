@@ -24,32 +24,17 @@ const Hero = () => {
         Descubra o segredo das pamonhas mais lucrativas da sua cidade e comece seu negócio hoje mesmo, na sua cozinha!
       </p>
 
-      {/* Mockup Container */}
-      <div className="relative w-full max-w-[320px] mb-12 group">
-        <div className="relative bg-[#1a1a1a] rounded-[2.5rem] p-3 shadow-2xl border-[6px] border-[#333]">
-          <div className="bg-[#0f1110] rounded-[2rem] overflow-hidden aspect-[9/18] relative">
-            <img
-              src="/placeholder.svg"
-              alt="Mockup"
-              className="w-full h-full object-cover"
-            />
-
-            {/* Overlay Info on Mockup */}
-            <div className="absolute bottom-6 left-6 text-left text-white z-20">
-              <p className="text-xl font-black mb-1">Lucro Real</p>
-              <div className="flex items-center gap-1.5 text-xs font-bold text-[#fac706]">
-                <CheckCircle2 className="w-4 h-4" />
-                <span>100% Prático</span>
-              </div>
-            </div>
-
-            {/* Mockup Shine Effect */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none"></div>
+      {/* Vertical VSL Player */}
+      <div className="relative w-full max-w-[320px] mb-12 mx-auto overflow-hidden rounded-2xl shadow-2xl bg-black">
+        <div className="aspect-[9/16] w-full">
+          <div
+            id="vid-698eabf9aa67549cb8e2e05c"
+            className="w-full h-full"
+            style={{ display: 'block', margin: '0 auto' }}
+          >
+            {/* Vtub player */}
           </div>
         </div>
-
-        {/* Glow behind phone */}
-        <div className="absolute -inset-4 bg-green-200/50 blur-3xl -z-10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
       </div>
 
       {/* CTA Button */}
