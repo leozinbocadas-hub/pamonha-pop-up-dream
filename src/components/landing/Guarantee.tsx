@@ -37,7 +37,7 @@ const Guarantee = () => {
                         <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
                             Eu confio tanto no meu método que vou tirar todo o peso das suas costas.
                             Você tem <span className="font-bold text-foreground">7 dias inteiros</span> para testar as receitas e ver os resultados.
-                            Se por qualquer motivo você achar que não é para você, basta nos enviar um e-mail e devolvemos 100% do seu investimento.
+                            Se por qualquer motivo você achar que não é para você, a <span className="font-bold text-primary">própria Kiwify</span> garante o seu reembolso imediato, sem precisar passar por nós.
                             <span className="block mt-4 font-bold text-foreground">Sem perguntas, sem burocracia e continuamos amigos.</span>
                         </p>
 
