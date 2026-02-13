@@ -5,6 +5,7 @@ import Benefits from "@/components/landing/Benefits";
 import Testimonials from "@/components/landing/Testimonials";
 import Bonuses from "@/components/landing/Bonuses";
 import Pricing from "@/components/landing/Pricing";
+import Guarantee from "@/components/landing/Guarantee";
 import UpsellModal from "@/components/landing/UpsellModal";
 import Footer from "@/components/landing/Footer";
 import FAQ from "@/components/landing/FAQ";
@@ -42,6 +43,7 @@ const Index = () => {
         onBasicClick={handleBasicPlan}
         onPremiumClick={handlePremiumPlan}
       />
+      <Guarantee />
       <FAQ />
       <Footer />
       <UpsellModal
