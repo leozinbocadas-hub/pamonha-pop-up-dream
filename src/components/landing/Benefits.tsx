@@ -24,21 +24,21 @@ const benefits: { Icon: LucideIcon; title: string; description: string }[] = [
   },
   {
     Icon: DollarSign,
-    title: "Margem de Lucro Alta",
+    title: "Dinheiro no Bolso",
     description:
-      "Aprenda a precificar corretamente e tenha margens de até 300% por pamonha.",
+      "Aprenda como ganhar de R$ 200 a R$ 500 por dia vendendo o que todo mundo ama: milho!",
   },
   {
     Icon: Smartphone,
-    title: "Estratégias de Venda",
+    title: "Tudo no Celular",
     description:
-      "Técnicas de marketing digital para vender pelo WhatsApp e redes sociais.",
+      "O App é muito fácil de usar. Você abre, escolhe a receita e começa a fazer na hora.",
   },
   {
     Icon: Home,
-    title: "Comece de Casa",
+    title: "Trabalhe da Cozinha",
     description:
-      "Sem necessidade de investimento alto. Comece na sua própria cozinha hoje mesmo.",
+      "Não precisa de loja chique. Você começa aí na sua casa mesmo, com o que já tem.",
   },
 ];
 

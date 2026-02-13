@@ -56,30 +56,30 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           <p className="text-muted-foreground text-sm mb-4">
             Ideal para quem quer começar
           </p>
-          <ul className="space-y-2 mb-6 text-sm text-foreground">
+          <ul className="space-y-2 mb-6 text-sm text-foreground text-left">
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> App Mestre do Milho (Starter)
+              <Check className="w-4 h-4 text-primary" /> Acesso ao App Mestre do Milho
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> 5 Receitas Principais
+              <Check className="w-4 h-4 text-primary" /> As 5 Receitas que mais vendem
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> Guia de Precificação Básica
+              <Check className="w-4 h-4 text-primary" /> Passo a passo simples
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> Acesso imediato
+              <Check className="w-4 h-4 text-primary" /> Acesso imediato pelo celular
             </li>
           </ul>
-          <div className="mb-4">
+          <div className="mb-4 text-left">
             <span className="text-3xl font-extrabold text-foreground">
               R$ 9,90
             </span>
           </div>
           <button
             onClick={onBasicClick}
-            className="w-full py-3 rounded-full border-2 border-primary text-primary font-bold text-base transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-glow-green"
+            className="w-full py-4 rounded-xl border-2 border-primary text-primary font-black text-base transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-glow-green uppercase"
           >
-            QUERO O PLANO ESSENCIAL
+            Quero o Plano Essencial
           </button>
         </div>
 
@@ -88,30 +88,30 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           className={`relative bg-primary rounded-xl p-6 shadow-xl transition-all duration-300 hover:shadow-glow-green ${isVisible ? "animate-fade-up" : "opacity-0"}`}
           style={{ animationDelay: "0.25s" }}
         >
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-            <Award className="w-3 h-3" /> MAIS POPULAR
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground text-xs font-black px-6 py-1.5 rounded-full flex items-center gap-1 shadow-md uppercase tracking-tighter">
+            <Award className="w-3 h-3" /> O mais completo
           </div>
-          <h4 className="font-bold text-lg text-primary-foreground mb-1 mt-2 flex items-center gap-2">
+          <h4 className="font-extrabold text-xl text-primary-foreground mb-1 mt-2 flex items-center gap-2">
             <Crown className="w-5 h-5 text-secondary" /> Plano Pro Lucrativo
           </h4>
-          <p className="text-primary-foreground/80 text-sm mb-4">
-            Tudo que você precisa para lucrar de verdade e faturar de <span className="font-bold">R$ 200 a R$ 500 reais por dia</span>
+          <p className="text-primary-foreground text-sm mb-6 font-medium">
+            Tudo que você precisa para lucrar de verdade e faturar de <span className="font-black underline">R$ 200 a R$ 500 por dia</span>
           </p>
-          <ul className="space-y-2 mb-6 text-sm text-primary-foreground">
+          <ul className="space-y-3 mb-8 text-sm text-primary-foreground text-left">
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> App Mestre do Milho (Full VR)
+              <Check className="w-5 h-5 text-secondary" /> Acesso Completo ao App
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> 20+ Receitas de Derivados do Milho
+              <Check className="w-5 h-5 text-secondary" /> Todas as 20+ Receitas de Milho
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Calculadora de Lucros Integrada
+              <Check className="w-5 h-5 text-secondary" /> Pamonhas, Bolos, Curau e muito mais
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Todos os Bônus Exclusivos
+              <Check className="w-5 h-5 text-secondary" /> Dicas para vender muito todo dia
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Suporte Individual por 30 dias
+              <Check className="w-5 h-5 text-secondary" /> Acesso Vitalício (Sem mensalidade)
             </li>
           </ul>
           <div className="mb-4">

@@ -4,26 +4,26 @@ import { Gift, Calculator, Camera, AlertOctagon, Users } from "lucide-react";
 const bonuses = [
     {
         Icon: Calculator,
-        title: "Calculadora de Lucros no App",
-        description: "Embutida no seu aplicativo, saiba exatamente o custo e lucro de cada derivado em segundos.",
+        title: "Calculadora de Lucro Fácil",
+        description: "Agora você vai saber exatamente quanto cobrar em cada produto para nunca mais sair no prejuízo.",
         value: "R$ 47,00",
     },
     {
         Icon: Camera,
-        title: "Curso de Conteúdo Lucrativo",
-        description: "Aprenda a postar no Instagram e WhatsApp para atrair dezenas de clientes todos os dias.",
+        title: "Segredo das Vendas no WhatsApp",
+        description: "O jeito certo de mandar mensagem e postar nos status para fazer a vizinhança toda querer comprar.",
         value: "R$ 67,00",
     },
     {
         Icon: AlertOctagon,
-        title: "Checklist de Início Rápido",
-        description: "O passo a passo exato para você começar a faturar hoje, sem precisar de grandes investimentos.",
+        title: "Guia: Materiais Baratos",
+        description: "Uma lista do que você realmente precisa comprar para começar hoje mesmo gastando o mínimo possível.",
         value: "R$ 37,00",
     },
     {
         Icon: Users,
-        title: "Grupo de Networking VIP",
-        description: "Acesso direto a outras empreendedoras que já faturam alto com derivados do milho para troca de experiências.",
+        title: "Grupo Vip das Pamonheiras",
+        description: "Espaço para conversar e trocar dicas com outras pessoas que também estão lucrando com milho.",
         value: "R$ 147,00",
     },
 ];
