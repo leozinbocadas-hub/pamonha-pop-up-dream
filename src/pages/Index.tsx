@@ -19,17 +19,17 @@ const Index = () => {
   };
 
   const handlePremiumPlan = () => {
-    window.open("#premium", "_self");
+    window.open("https://pay.kiwify.com.br/FRl0aLd", "_self");
   };
 
   const handleUpsellAccept = () => {
     setShowUpsell(false);
-    window.open("#premium-desconto", "_self");
+    window.open("https://pay.kiwify.com.br/nsgQkv3", "_self");
   };
 
   const handleUpsellDecline = () => {
     setShowUpsell(false);
-    window.open("#basico", "_self");
+    window.open("https://pay.kiwify.com.br/sVAlOiP", "_self");
   };
 
   return (
