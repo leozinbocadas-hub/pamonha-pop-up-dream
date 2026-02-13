@@ -5,6 +5,7 @@ import {
   DialogTitle,
   DialogDescription,
 } from "@/components/ui/dialog";
+import { PartyPopper, Check, Rocket } from "lucide-react";
 
 interface UpsellModalProps {
   open: boolean;
@@ -17,7 +18,9 @@ const UpsellModal = ({ open, onAccept, onDecline }: UpsellModalProps) => {
     <Dialog open={open} onOpenChange={(v) => !v && onDecline()}>
       <DialogContent className="max-w-[90vw] rounded-xl p-6 sm:max-w-md">
         <DialogHeader className="text-center">
-          <div className="text-4xl mb-2 mx-auto">🎉</div>
+          <div className="mb-2 mx-auto">
+            <PartyPopper className="w-10 h-10 text-secondary mx-auto" />
+          </div>
           <DialogTitle className="text-xl font-extrabold text-foreground">
             Espere! Oferta Especial!
           </DialogTitle>
@@ -40,28 +43,28 @@ const UpsellModal = ({ open, onAccept, onDecline }: UpsellModalProps) => {
 
         <ul className="space-y-2 text-sm text-foreground mb-6">
           <li className="flex items-center gap-2">
-            <span className="text-primary">✓</span> 15+ receitas exclusivas
+            <Check className="w-4 h-4 text-primary" /> 15+ receitas exclusivas
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-primary">✓</span> Guia completo de vendas
+            <Check className="w-4 h-4 text-primary" /> Guia completo de vendas
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-primary">✓</span> Marketing pelo WhatsApp
+            <Check className="w-4 h-4 text-primary" /> Marketing pelo WhatsApp
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-primary">✓</span> Planilha financeira
+            <Check className="w-4 h-4 text-primary" /> Planilha financeira
           </li>
           <li className="flex items-center gap-2">
-            <span className="text-primary">✓</span> Suporte por 30 dias
+            <Check className="w-4 h-4 text-primary" /> Suporte por 30 dias
           </li>
         </ul>
 
         <div className="flex flex-col gap-3">
           <button
             onClick={onAccept}
-            className="w-full py-3 rounded-full bg-primary text-primary-foreground font-bold text-base transition-all duration-300 hover:scale-105 shadow-glow-green animate-pulse-cta"
+            className="w-full py-3 rounded-full bg-primary text-primary-foreground font-bold text-base transition-all duration-300 hover:scale-105 shadow-glow-green animate-pulse-cta inline-flex items-center justify-center gap-2"
           >
-            QUERO O PLANO PREMIUM 🚀
+            QUERO O PLANO PREMIUM <Rocket className="w-5 h-5" />
           </button>
           <button
             onClick={onDecline}

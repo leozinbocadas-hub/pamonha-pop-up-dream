@@ -1,26 +1,27 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { BookOpen, DollarSign, Smartphone, Home, type LucideIcon } from "lucide-react";
 
-const benefits = [
+const benefits: { Icon: LucideIcon; title: string; description: string }[] = [
   {
-    icon: "📖",
+    Icon: BookOpen,
     title: "Receitas Exclusivas",
     description:
       "Receitas testadas e aprovadas que encantam clientes e garantem pedidos recorrentes.",
   },
   {
-    icon: "💰",
+    Icon: DollarSign,
     title: "Margem de Lucro Alta",
     description:
       "Aprenda a precificar corretamente e tenha margens de até 300% por pamonha.",
   },
   {
-    icon: "📱",
+    Icon: Smartphone,
     title: "Estratégias de Venda",
     description:
       "Técnicas de marketing digital para vender pelo WhatsApp e redes sociais.",
   },
   {
-    icon: "🏠",
+    Icon: Home,
     title: "Comece de Casa",
     description:
       "Sem necessidade de investimento alto. Comece na sua própria cozinha hoje mesmo.",
@@ -51,7 +52,9 @@ const Benefits = () => {
             style={{ animationDelay: `${0.1 * (i + 1)}s` }}
           >
             <div className="flex items-start gap-4">
-              <span className="text-3xl flex-shrink-0">{b.icon}</span>
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <b.Icon className="w-5 h-5 text-primary" />
+              </div>
               <div>
                 <h4 className="font-bold text-foreground text-lg mb-1">
                   {b.title}

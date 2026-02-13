@@ -1,4 +1,5 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { Package, Crown, Check, Rocket, Award } from "lucide-react";
 
 interface PricingProps {
   onBasicClick: () => void;
@@ -27,21 +28,21 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           className={`bg-card rounded-xl p-6 border border-border shadow-md transition-all duration-300 hover:shadow-lg ${isVisible ? "animate-fade-up" : "opacity-0"}`}
           style={{ animationDelay: "0.1s" }}
         >
-          <h4 className="font-bold text-lg text-foreground mb-1">
-            📦 Plano Básico
+          <h4 className="font-bold text-lg text-foreground mb-1 flex items-center gap-2">
+            <Package className="w-5 h-5 text-primary" /> Plano Básico
           </h4>
           <p className="text-muted-foreground text-sm mb-4">
             Ideal para quem quer começar
           </p>
           <ul className="space-y-2 mb-6 text-sm text-foreground">
             <li className="flex items-center gap-2">
-              <span className="text-primary">✓</span> 5 receitas de pamonha
+              <Check className="w-4 h-4 text-primary" /> 5 receitas de pamonha
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">✓</span> Guia de precificação
+              <Check className="w-4 h-4 text-primary" /> Guia de precificação
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-primary">✓</span> Acesso imediato
+              <Check className="w-4 h-4 text-primary" /> Acesso imediato
             </li>
           </ul>
           <div className="mb-4">
@@ -62,30 +63,30 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           className={`relative bg-primary rounded-xl p-6 shadow-xl transition-all duration-300 hover:shadow-glow-green ${isVisible ? "animate-fade-up" : "opacity-0"}`}
           style={{ animationDelay: "0.25s" }}
         >
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground text-xs font-bold px-4 py-1 rounded-full">
-            ⭐ MAIS POPULAR
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-secondary-foreground text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
+            <Award className="w-3 h-3" /> MAIS POPULAR
           </div>
-          <h4 className="font-bold text-lg text-primary-foreground mb-1 mt-2">
-            👑 Plano Premium
+          <h4 className="font-bold text-lg text-primary-foreground mb-1 mt-2 flex items-center gap-2">
+            <Crown className="w-5 h-5 text-secondary" /> Plano Premium
           </h4>
           <p className="text-primary-foreground/80 text-sm mb-4">
             Tudo que você precisa para lucrar de verdade
           </p>
           <ul className="space-y-2 mb-6 text-sm text-primary-foreground">
             <li className="flex items-center gap-2">
-              <span className="text-secondary">✓</span> 15+ receitas exclusivas
+              <Check className="w-4 h-4 text-secondary" /> 15+ receitas exclusivas
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-secondary">✓</span> Guia completo de vendas
+              <Check className="w-4 h-4 text-secondary" /> Guia completo de vendas
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-secondary">✓</span> Marketing pelo WhatsApp
+              <Check className="w-4 h-4 text-secondary" /> Marketing pelo WhatsApp
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-secondary">✓</span> Planilha de controle financeiro
+              <Check className="w-4 h-4 text-secondary" /> Planilha de controle financeiro
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-secondary">✓</span> Suporte por 30 dias
+              <Check className="w-4 h-4 text-secondary" /> Suporte por 30 dias
             </li>
           </ul>
           <div className="mb-4">
@@ -95,9 +96,9 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           </div>
           <button
             onClick={onPremiumClick}
-            className="w-full py-3 rounded-full bg-secondary text-secondary-foreground font-bold text-base transition-all duration-300 hover:scale-105 hover:shadow-glow-yellow animate-pulse-cta"
+            className="w-full py-3 rounded-full bg-secondary text-secondary-foreground font-bold text-base transition-all duration-300 hover:scale-105 hover:shadow-glow-yellow animate-pulse-cta inline-flex items-center justify-center gap-2"
           >
-            QUERO O PLANO PREMIUM 🚀
+            QUERO O PLANO PREMIUM <Rocket className="w-5 h-5" />
           </button>
         </div>
       </div>
