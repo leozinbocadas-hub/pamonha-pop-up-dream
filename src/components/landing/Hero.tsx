@@ -1,6 +1,18 @@
+import { useEffect } from "react";
 import { ChevronDown, CheckCircle2 } from "lucide-react";
 
 const Hero = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://scripts.converteai.net/ab14c621-69de-4bc7-ad1a-73b273a93155/players/698eabf9aa67549cb8e2e05c/v4/player.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className="bg-[#f2fcf2] pt-8 pb-16 px-4 flex flex-col items-center text-center overflow-hidden">
       {/* Badge */}
@@ -25,16 +37,13 @@ const Hero = () => {
       </p>
 
       {/* Vertical VSL Player */}
-      <div className="relative w-full max-w-[320px] mb-12 mx-auto overflow-hidden rounded-2xl shadow-2xl bg-black">
-        <div className="aspect-[9/16] w-full">
-          <div
-            id="vid-698eabf9aa67549cb8e2e05c"
-            className="w-full h-full"
-            style={{ display: 'block', margin: '0 auto' }}
-          >
-            {/* Vtub player */}
-          </div>
-        </div>
+      <div className="relative w-full max-w-[400px] mb-12 mx-auto overflow-hidden rounded-2xl shadow-2xl bg-black min-h-[500px] flex items-center justify-center">
+        <div
+          className="w-full"
+          dangerouslySetInnerHTML={{
+            __html: `<vturb-smartplayer id="vid-698eabf9aa67549cb8e2e05c" style="display: block; margin: 0 auto; width: 100%;"></vturb-smartplayer>`
+          }}
+        />
       </div>
 
       {/* CTA Button */}
