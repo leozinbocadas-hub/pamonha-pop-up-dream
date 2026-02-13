@@ -18,9 +18,9 @@ const processImages = [
 const benefits: { Icon: LucideIcon; title: string; description: string }[] = [
   {
     Icon: BookOpen,
-    title: "Receitas Exclusivas",
+    title: "App Mestre do Milho",
     description:
-      "Receitas testadas e aprovadas que encantam clientes e garantem pedidos recorrentes.",
+      "Acesse todas as receitas e derivados do milho direto no seu celular através do nosso aplicativo prático.",
   },
   {
     Icon: DollarSign,

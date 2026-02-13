@@ -58,10 +58,13 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           </p>
           <ul className="space-y-2 mb-6 text-sm text-foreground">
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> 5 receitas de pamonha
+              <Check className="w-4 h-4 text-primary" /> App Mestre do Milho (Starter)
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> Guia de precificação
+              <Check className="w-4 h-4 text-primary" /> 5 Receitas Principais
+            </li>
+            <li className="flex items-center gap-2">
+              <Check className="w-4 h-4 text-primary" /> Guia de Precificação Básica
             </li>
             <li className="flex items-center gap-2">
               <Check className="w-4 h-4 text-primary" /> Acesso imediato
@@ -96,19 +99,19 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           </p>
           <ul className="space-y-2 mb-6 text-sm text-primary-foreground">
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> 15+ receitas exclusivas
+              <Check className="w-4 h-4 text-secondary" /> App Mestre do Milho (Full VR)
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Guia completo de vendas
+              <Check className="w-4 h-4 text-secondary" /> 20+ Receitas de Derivados do Milho
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Marketing pelo WhatsApp
+              <Check className="w-4 h-4 text-secondary" /> Calculadora de Lucros Integrada
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Planilha de controle financeiro
+              <Check className="w-4 h-4 text-secondary" /> Todos os Bônus Exclusivos
             </li>
             <li className="flex items-center gap-2">
-              <Check className="w-4 h-4 text-secondary" /> Suporte por 30 dias
+              <Check className="w-4 h-4 text-secondary" /> Suporte Individual por 30 dias
             </li>
           </ul>
           <div className="mb-4">

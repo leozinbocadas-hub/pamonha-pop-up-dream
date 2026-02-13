@@ -4,26 +4,26 @@ import { Gift, Calculator, Camera, AlertOctagon, Users } from "lucide-react";
 const bonuses = [
     {
         Icon: Calculator,
-        title: "Planilha de Lucro Real",
-        description: "Saiba exatamente quanto você ganha em cada pamonha vendida e nunca mais perca dinheiro.",
+        title: "Calculadora de Lucros no App",
+        description: "Embutida no seu aplicativo, saiba exatamente o custo e lucro de cada derivado em segundos.",
         value: "R$ 47,00",
     },
     {
         Icon: Camera,
-        title: "Pack de Fotos Premium",
-        description: "Fotos profissionais e chamativas para você usar no seu Instagram e atrair dezenas de clientes.",
+        title: "Curso de Conteúdo Lucrativo",
+        description: "Aprenda a postar no Instagram e WhatsApp para atrair dezenas de clientes todos os dias.",
         value: "R$ 67,00",
     },
     {
         Icon: AlertOctagon,
-        title: "Os 5 Erros Fatais",
-        description: "Um guia prático sobre o que NÃO fazer para não jogar dinheiro fora no início do seu negócio.",
+        title: "Checklist de Início Rápido",
+        description: "O passo a passo exato para você começar a faturar hoje, sem precisar de grandes investimentos.",
         value: "R$ 37,00",
     },
     {
         Icon: Users,
-        title: "Comunidade VIP",
-        description: "Acesso ao grupo exclusivo de empreendedoras para trocar receitas e estratégias de venda.",
+        title: "Grupo de Networking VIP",
+        description: "Acesso direto a outras empreendedoras que já faturam alto com derivados do milho para troca de experiências.",
         value: "R$ 147,00",
     },
 ];

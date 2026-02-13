@@ -33,7 +33,7 @@ const Hero = () => {
 
       {/* Subheadline */}
       <p className="text-base sm:text-lg text-[#4a6358] max-w-sm mb-10 leading-relaxed font-medium">
-        Descubra o segredo das pamonhas mais lucrativas da sua cidade e comece seu negócio hoje mesmo, na sua cozinha!
+        Tenha as receitas secretas de pamonhas e derivados do milho na palma da sua mão com nosso <span className="text-[#1a5b33] font-bold">App Exclusivo!</span>
       </p>
 
       {/* Vertical VSL Player */}
