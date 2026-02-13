@@ -1,5 +1,6 @@
+import { useState, useEffect } from "react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { Package, Crown, Check, Rocket, Award } from "lucide-react";
+import { Package, Crown, Check, Rocket, Award, AlertCircle } from "lucide-react";
 
 interface PricingProps {
   onBasicClick: () => void;
@@ -8,9 +9,30 @@ interface PricingProps {
 
 const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
   const { ref, isVisible } = useScrollAnimation();
+  const [timeLeft, setTimeLeft] = useState(114); // 01:54 in seconds
+
+  useEffect(() => {
+    if (timeLeft <= 0) return;
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft]);
+
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
+  };
 
   return (
-    <section id="planos" className="px-5 py-16 bg-background" ref={ref}>
+    <section id="planos" className="px-5 py-16 bg-background flex flex-col items-center" ref={ref}>
+      {/* Central Urgency Timer */}
+      <div className={`flex items-center gap-2 bg-[#e4231b] text-white mb-6 font-black text-base sm:text-lg px-8 py-3 rounded-xl shadow-lg ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
+        <AlertCircle className="w-5 h-5" />
+        <span className="uppercase tracking-tight">Oferta expira em: {formatTime(timeLeft)}</span>
+      </div>
+
       <h3
         className={`text-2xl font-bold text-center text-foreground mb-2 ${isVisible ? "animate-fade-up" : "opacity-0"}`}
       >
@@ -29,7 +51,7 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           style={{ animationDelay: "0.1s" }}
         >
           <h4 className="font-bold text-lg text-foreground mb-1 flex items-center gap-2">
-            <Package className="w-5 h-5 text-primary" /> Plano Básico
+            <Package className="w-5 h-5 text-primary" /> Plano Essencial
           </h4>
           <p className="text-muted-foreground text-sm mb-4">
             Ideal para quem quer começar
@@ -47,14 +69,14 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           </ul>
           <div className="mb-4">
             <span className="text-3xl font-extrabold text-foreground">
-              R$ 10,00
+              R$ 9,90
             </span>
           </div>
           <button
             onClick={onBasicClick}
             className="w-full py-3 rounded-full border-2 border-primary text-primary font-bold text-base transition-all duration-300 hover:bg-primary hover:text-primary-foreground hover:shadow-glow-green"
           >
-            QUERO O PLANO BÁSICO
+            QUERO O PLANO ESSENCIAL
           </button>
         </div>
 
@@ -67,7 +89,7 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
             <Award className="w-3 h-3" /> MAIS POPULAR
           </div>
           <h4 className="font-bold text-lg text-primary-foreground mb-1 mt-2 flex items-center gap-2">
-            <Crown className="w-5 h-5 text-secondary" /> Plano Premium
+            <Crown className="w-5 h-5 text-secondary" /> Plano Pro Lucrativo
           </h4>
           <p className="text-primary-foreground/80 text-sm mb-4">
             Tudo que você precisa para lucrar de verdade

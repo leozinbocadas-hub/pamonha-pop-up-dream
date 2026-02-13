@@ -26,7 +26,7 @@ const UpsellModal = ({ open, onAccept, onDecline }: UpsellModalProps) => {
           </DialogTitle>
           <DialogDescription className="text-muted-foreground mt-2 text-sm">
             Só por hoje, leve o{" "}
-            <span className="font-bold text-primary">Plano Premium</span> por
+            <span className="font-bold text-primary">Plano Pro Lucrativo</span> por
             um preço imperdível!
           </DialogDescription>
         </DialogHeader>
@@ -64,13 +64,13 @@ const UpsellModal = ({ open, onAccept, onDecline }: UpsellModalProps) => {
             onClick={onAccept}
             className="w-full py-3 rounded-full bg-primary text-primary-foreground font-bold text-base transition-all duration-300 hover:scale-105 shadow-glow-green animate-pulse-cta inline-flex items-center justify-center gap-2"
           >
-            QUERO O PLANO PREMIUM <Rocket className="w-5 h-5" />
+            QUERO O PLANO PRO LUCRATIVO <Rocket className="w-5 h-5" />
           </button>
           <button
             onClick={onDecline}
             className="text-muted-foreground text-xs underline transition-colors duration-300 hover:text-foreground"
           >
-            Não, obrigado. Continuar no Plano Básico
+            Não, obrigado. Continuar no Plano Essencial
           </button>
         </div>
       </DialogContent>
