@@ -22,9 +22,9 @@ const Hero = () => {
 
       {/* Main Headline */}
       <h1 className="text-[32px] sm:text-[48px] lg:text-[56px] font-black leading-[0.95] text-[#1a5b33] flex flex-col gap-1 mb-6 max-w-2xl uppercase tracking-tighter">
-        <span>FAÇA DE R$ 200 A</span>
-        <span>R$ 500 POR DIA</span>
-        <span>VENDENDO</span>
+        <span>FAÇA DE R$ 200 A </span>
+        <span>R$ 500 POR DIA </span>
+        <span>VENDENDO </span>
         <div className="relative inline-block self-center px-4 py-1 mt-1">
           <span className="relative z-10">PAMONHA</span>
           <div className="absolute inset-0 bg-[#fac706] -rotate-1"></div>

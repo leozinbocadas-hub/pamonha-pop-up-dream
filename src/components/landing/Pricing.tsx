@@ -7,6 +7,7 @@ interface PricingProps {
   onPremiumClick: () => void;
 }
 
+// Componente de Preços e Planos
 const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
   const { ref, isVisible } = useScrollAnimation();
   const [timeLeft, setTimeLeft] = useState(114); // 01:54 in seconds
