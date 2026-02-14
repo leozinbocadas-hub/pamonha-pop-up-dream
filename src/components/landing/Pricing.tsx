@@ -99,6 +99,9 @@ const Pricing = ({ onBasicClick, onPremiumClick }: PricingProps) => {
           <h4 className="font-extrabold text-xl text-primary-foreground mb-1 mt-2 flex items-center gap-2">
             <Crown className="w-5 h-5 text-secondary" /> Plano Pro Lucrativo
           </h4>
+          <p className="text-secondary font-black text-sm mb-4 uppercase tracking-tight">
+            Fature de R$ 200 a R$ 500 por dia
+          </p>
           <p className="text-primary-foreground text-sm mb-6 font-medium leading-relaxed">
             O ecossistema completo para quem quer construir um negócio de elite e escalar as vendas.
           </p>
