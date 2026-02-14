@@ -38,6 +38,7 @@ const Index = () => {
       <Hero />
       <Benefits />
       <Testimonials />
+      <Bonuses />
       <Pricing
         onBasicClick={handleBasicPlan}
         onPremiumClick={handlePremiumPlan}

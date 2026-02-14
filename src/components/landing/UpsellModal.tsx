@@ -43,19 +43,19 @@ const UpsellModal = ({ open, onAccept, onDecline }: UpsellModalProps) => {
 
         <ul className="space-y-2 text-sm text-foreground mb-6">
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" /> 15+ receitas exclusivas
+            <Check className="w-4 h-4 text-[#22c55e]" /> 250+ receitas exclusivas
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" /> Guia completo de vendas
+            <Check className="w-4 h-4 text-[#22c55e]" /> Calculadora de Lucro Automática
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" /> Marketing pelo WhatsApp
+            <Check className="w-4 h-4 text-[#22c55e]" /> Scripts de Vendas para WhatsApp
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" /> Planilha financeira
+            <Check className="w-4 h-4 text-[#22c55e]" /> Marketing Local (Atraia Vizinhos)
           </li>
           <li className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-primary" /> Suporte por 30 dias
+            <Check className="w-4 h-4 text-[#22c55e]" /> Acesso Vitalício + Suporte
           </li>
         </ul>
 

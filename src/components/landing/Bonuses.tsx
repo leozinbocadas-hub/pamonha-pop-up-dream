@@ -4,27 +4,33 @@ import { Gift, Calculator, Camera, AlertOctagon, Users } from "lucide-react";
 const bonuses = [
     {
         Icon: Calculator,
-        title: "Calculadora de Lucro Fácil",
-        description: "Agora você vai saber exatamente quanto cobrar em cada produto para nunca mais sair no prejuízo.",
-        value: "R$ 47,00",
+        title: "Calculadora de Lucro Automática",
+        description: "Ferramenta para colocar o preço certo e garantir margens de lucro de até 300% em cada venda.",
+        value: "R$ 97,00",
     },
     {
         Icon: Camera,
-        title: "Segredo das Vendas no WhatsApp",
-        description: "O jeito certo de mandar mensagem e postar nos status para fazer a vizinhança toda querer comprar.",
+        title: "Templates de WhatsApp Venda",
+        description: "Scripts prontos para 'Avisar que tem Pamonha', fechar encomendas e recuperar clientes antigos.",
         value: "R$ 67,00",
     },
     {
-        Icon: AlertOctagon,
-        title: "Guia: Materiais Baratos",
-        description: "Uma lista do que você realmente precisa comprar para começar hoje mesmo gastando o mínimo possível.",
-        value: "R$ 37,00",
+        Icon: Users,
+        title: "Guia de Marketing Local",
+        description: "Aprenda a usar Instagram e Google Maps para atrair todos os vizinhos do seu bairro.",
+        value: "R$ 147,00",
     },
     {
-        Icon: Users,
-        title: "Grupo Vip das Pamonheiras",
-        description: "Espaço para conversar e trocar dicas com outras pessoas que também estão lucrando com milho.",
-        value: "R$ 147,00",
+        Icon: AlertOctagon,
+        title: "Checklist de Equipamentos",
+        description: "O que comprar para produzir mais rápido, com menos esforço e economizando dinheiro.",
+        value: "R$ 47,00",
+    },
+    {
+        Icon: Gift,
+        title: "Guia de Acompanhamentos",
+        description: "Como vender itens extras e aumentar o seu ticket médio em todas as encomendas.",
+        value: "R$ 37,00",
     },
 ];
 
@@ -32,46 +38,43 @@ const Bonuses = () => {
     const { ref, isVisible } = useScrollAnimation();
 
     return (
-        <section className="px-5 py-16 bg-[#f8fff8]" ref={ref}>
+        <section id="bonus" className="px-5 py-20 bg-[#f8fff8]" ref={ref}>
             <div className="max-w-md mx-auto">
                 <div className="text-center mb-12">
-                    <div className={`inline-flex items-center gap-2 bg-[#fac706] text-[#006400] text-xs font-black px-4 py-1 rounded-full mb-4 uppercase tracking-wider shadow-sm ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-                        <Gift className="w-4 h-4" /> Bônus Exclusivos
+                    <div className={`inline-flex items-center gap-2 bg-[#fac706] text-[#1a5b33] text-[10px] font-black px-4 py-1.5 rounded-full mb-4 uppercase tracking-[0.2em] shadow-sm ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
+                        <Gift className="w-4 h-4" /> 16 Bônus Estratégicos incluídos
                     </div>
-                    <h3 className={`text-3xl font-black text-[#1a5b33] mb-3 leading-tight ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
+                    <h3 className={`text-4xl font-black text-[#1a5b33] mb-3 leading-tight ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
                         VOCÊ VAI LEVAR TUDO ISSO <span className="text-[#e4231b]">DE GRAÇA!</span>
                     </h3>
-                    <p className={`text-muted-foreground text-sm ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
-                        Ao garantir seu acesso hoje, você desbloqueia esses 4 bônus especiais:
+                    <p className={`text-muted-foreground text-sm font-medium ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
+                        Ao garantir o Plano Pro hoje, você desbloqueia o ecossistema completo:
                     </p>
                 </div>
 
-                <div className="grid gap-6">
+                <div className="grid gap-4">
                     {bonuses.map((b, i) => (
                         <div
                             key={i}
-                            className={`bg-white rounded-2xl p-5 border-2 border-dashed border-green-200 shadow-sm relative overflow-hidden group hover:border-primary transition-all duration-300 ${isVisible ? "animate-fade-up" : "opacity-0"}`}
+                            className={`bg-white rounded-2xl p-5 border border-green-100 shadow-sm relative overflow-hidden group hover:border-[#fac706] transition-all duration-300 ${isVisible ? "animate-fade-up" : "opacity-0"}`}
                             style={{ animationDelay: `${0.1 * (i + 1)}s` }}
                         >
                             {/* Value Badge */}
-                            <div className="absolute -right-12 top-4 rotate-45 bg-gray-100 text-gray-400 text-[10px] py-1 px-12 font-bold line-through">
+                            <div className="absolute -right-12 top-4 rotate-45 bg-gray-50 text-gray-300 text-[9px] py-1 px-12 font-bold line-through">
                                 {b.value}
                             </div>
 
-                            <div className="flex gap-4 items-start">
-                                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                                    <b.Icon className="w-6 h-6 text-primary group-hover:text-white" />
+                            <div className="flex gap-4 items-center">
+                                <div className="w-12 h-12 rounded-xl bg-[#1a5b33]/5 flex items-center justify-center flex-shrink-0 group-hover:bg-[#1a5b33] group-hover:text-white transition-colors">
+                                    <b.Icon className="w-6 h-6 text-[#1a5b33] group-hover:text-white" />
                                 </div>
                                 <div>
-                                    <h4 className="font-extrabold text-[#1a5b33] text-lg leading-tight mb-1">
+                                    <h4 className="font-black text-[#1a5b33] text-base leading-tight">
                                         {b.title}
                                     </h4>
-                                    <p className="text-muted-foreground text-sm leading-relaxed">
+                                    <p className="text-muted-foreground text-[12px] leading-relaxed mt-1">
                                         {b.description}
                                     </p>
-                                    <div className="mt-2 inline-block bg-green-100 text-green-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">
-                                        Grátis Hoje
-                                    </div>
                                 </div>
                             </div>
                         </div>
