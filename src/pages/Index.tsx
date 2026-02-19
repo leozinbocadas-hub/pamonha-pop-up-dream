@@ -19,17 +19,17 @@ const Index = () => {
   };
 
   const handlePremiumPlan = () => {
-    window.open("https://pay.kiwify.com.br/FRl0aLd", "_self");
+    window.open("https://pay.kirvano.com/31584ae3-a247-4375-885e-afd174a38018", "_self");
   };
 
   const handleUpsellAccept = () => {
     setShowUpsell(false);
-    window.open("https://pay.kiwify.com.br/nsgQkv3", "_self");
+    window.open("https://pay.kirvano.com/31ee8152-fc7b-47a2-a366-811a158efe74", "_self");
   };
 
   const handleUpsellDecline = () => {
     setShowUpsell(false);
-    window.open("https://pay.kiwify.com.br/sVAlOiP", "_self");
+    window.open("https://pay.kirvano.com/5161f934-dd00-4e0d-af1f-0602532ddd3e", "_self");
   };
 
   return (
